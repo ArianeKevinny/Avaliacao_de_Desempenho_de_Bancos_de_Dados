@@ -5,9 +5,6 @@ Disciplina: MAC0426 / MAC5760
 
 Nosso projeto realizamos a medição e comparação do desempenho dos SGBD's PostgreSQL e MySQL na execução de diferentes tipos de consultas e operaçãoes de modificação dos dados, utilizando SQL sobre um banco de dados relacional, com e sem apoio do uso de índices.
 
-### Banco de dados utilizado
-
-
 ## Instruções para a execução dos scripts/programas criados
 
 
