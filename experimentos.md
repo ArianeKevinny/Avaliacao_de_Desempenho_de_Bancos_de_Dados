@@ -41,24 +41,27 @@ As operações obrigatórias incluem:
 
 4. **Buscas por padrões de string:**
    - Utilização do operador **`LIKE`**
-      - Buscar posts que possuem tags especificas para linguagens de programação
+      - Buscar posts que possuam tags especificas para linguagens de programação
       - Filtragem de usuários na Location X 
 5. **Consultas com relacionamentos:**
    - Junções (**JOIN**)
    - Múltiplas junções
-      - Buscar usuários que possuem distintivos
-      - Buscar usuários que possuem mais distintivos
+      - Buscar usuários que possuam distintivos
+      - Buscar usuários que possuam mais distintivos
       - Buscar posts do tipo "Perguntas" feitos pelo usuário A em certo intervalo de tempo além de todos e todos os comentários com score positivo
-      - Listar usuários que fizeram posts votados como 12-spam, trazer o indentificador de perfil
+      - Listar usuários que fizeram posts que foram votados como 12-spam, trazer o indentificador de perfil
       - Listar usuários que fizeram posts votados como 12-spam, trazer o indentificador de perfil e seus respectivos posts (Title, Body, CreationDate, ClosedDate)
 
 6. **Consultas com subconsultas**
+   - Listar todos os usuários que não possuam publicação de posts
+   - Listar todos os usuários que possuam Badges e posts do tipo Question 
+   - Listar todos os usuários que possuam Badges ou posts do tipo Question 
 
 7. **Operações com agrupamento e agregação:**
    - **Soma (SUM)**
-   - **Média (AVG)**
-   - **Mínimo (MIN)**
-   - **Máximo (MAX)**
+   - **Média (AVG)**: users.Age, users.Reputation (age), 
+   - **Mínimo (MIN)**: user.Age, user.Reputation, post.score (tags)
+   - **Máximo (MAX)**: posts.FavoriteCount
    - **Contagem (COUNT)**
 
 ---
