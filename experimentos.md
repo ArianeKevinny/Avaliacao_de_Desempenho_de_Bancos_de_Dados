@@ -14,8 +14,15 @@ As operações obrigatórias incluem:
 
 1. **Operações básicas de dados:**
    - Inserção
+      - Inserir um novo usuário U1 na base Users
+      - Inserir um novo usuário U2 na base Users
+      - Inserir um novo post A do user U1 com tipo 1-Question + Add comments 
+      - Inserir um novo post B do user U1 com tipo 1-Question + Add comments
+      - Inserir um novo post C do user U2 com tipo 2-Answer referenciando uma outra postagem (B) respondendo post A + Add comments
    - Remoção
+      - Remover referencia do post B para se referir a nenhum post
    - Alteração  
+      - Alterar tipo do posto B
    *(em diferentes tabelas)*
 
 2. **Buscas por chave primária:**
@@ -28,10 +35,16 @@ As operações obrigatórias incluem:
 
 4. **Buscas por padrões de string:**
    - Utilização do operador **`LIKE`**
+      - Buscar posts que possuem tags especificas para linguagens de programação
 
 5. **Consultas com relacionamentos:**
    - Junções (**JOIN**)
    - Múltiplas junções
+      - Buscar usuários que possuem distintivos
+      - Buscar usuários que possuem mais distintivos
+      - Buscar posts do tipo "Perguntas" feitos pelo usuário A em certo intervalo de tempo além de todos e todos os comentários com score positivo
+      - Listar usuários que fizeram posts votados como 12-spam, trazer o indentificador de perfil
+      - Listar usuários que fizeram posts votados como 12-spam, trazer o indentificador de perfil e seus respectivos posts (Title, Body, CreationDate, ClosedDate)
 
 6. **Consultas com subconsultas**
 
