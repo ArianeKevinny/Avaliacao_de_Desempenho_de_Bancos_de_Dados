@@ -13,6 +13,8 @@ Para os experimentos de avaliação de desempenho, o grupo deverá:
 As operações obrigatórias incluem:
 
 1. **Operações básicas de dados:**
+   - Consultas simples
+      - Trazer o detalhamento de cada base, 50 primeiras linhas
    - Inserção
       - Inserir um novo usuário U1 na base Users
       - Inserir um novo usuário U2 na base Users
@@ -27,16 +29,20 @@ As operações obrigatórias incluem:
 
 2. **Buscas por chave primária:**
    - Busca por **uma única chave**
+      - Buscar title_post quando id = A
    - Busca por **faixa de valores**
+      - buscar todos os posts de uma respectiva data do usuário id=U1
 
 3. **Buscas por atributos não-chave:**
    - Consultas em atributos não-chave
+      - buscar todos os usuários com idade 65 
    - Uso de **condições compostas**
+      - Buscar todos os usuários com idade 65 que tenha feito alguma postagem no último mês
 
 4. **Buscas por padrões de string:**
    - Utilização do operador **`LIKE`**
       - Buscar posts que possuem tags especificas para linguagens de programação
-
+      - Filtragem de usuários na Location X 
 5. **Consultas com relacionamentos:**
    - Junções (**JOIN**)
    - Múltiplas junções
@@ -73,6 +79,7 @@ O grupo deverá:
      - **Hash**
 
 - Identificar **quais índices trazem maior ganho de desempenho**.
+   1. Pesquisar sobre ferramentas de testes de índices 
 
 ---
 
