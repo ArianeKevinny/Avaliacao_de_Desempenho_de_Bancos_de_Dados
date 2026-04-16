@@ -1,4 +1,4 @@
-# Avaliacao de Desempenho de Bancos de Dados
+# Avaliação de Desempenho de Bancos de Dados
 Disciplina: MAC0426 / MAC5760
 
 ## Descrição Geral do Projeto
