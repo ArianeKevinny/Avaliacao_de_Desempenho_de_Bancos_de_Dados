@@ -29,11 +29,12 @@ Nosso projeto realizamos a medição e comparação do desempenho dos SGBD's Pos
 ## Seções do relatório
 - [ ] Introdução: contendo as informações gerais do projeto
 - [ ] Sobre as experimento e cenários projetados: autoexplicativo
-- [ ] Ambiente computacional: pode ser uma subseções da introdução
+  - [ ] Ambiente computacional: sobre o pc + sobre os sgdb
 - [ ] Medidas de desempenho obtidas: uso orbigatório de tabelas/gráficos para comparação;
   - [ ] Tempo médio de execução de cada op e medidas de variablidade/disperção
   - [ ] Gráfico de linha/diagrama de caixa contendo o tempo de todas as operações realizadas
   - [ ] Adicional: desempenho em relação à máquina
 - [ ] Conclusão
+- [ ] Liks
 - [ ] Refs, se existir
       
