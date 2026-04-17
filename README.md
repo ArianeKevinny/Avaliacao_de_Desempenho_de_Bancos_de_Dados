@@ -25,6 +25,8 @@ Nosso projeto realizamos a medição e comparação do desempenho dos SGBD's Pos
      - [ ] Adicionar ao relatório final a justificativa/descrição do cenário
 - [ ] Desenvolver os scripts para a execução de cada cenário
 - [ ] Criação do relatório
+- [ ] Criação de Slide
+- [ ] Planejar apresentação
 
 ## Seções do relatório
 - [ ] Introdução: contendo as informações gerais do projeto
