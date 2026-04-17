@@ -1,80 +1,85 @@
 # Experimentos de Avaliação de Desempenho
 
-## 1. Definição Geral
-Para os experimentos de avaliação de desempenho, o grupo deverá:
 
-- Especificar um conjunto de **operações e consultas** sobre o banco de dados do **StackOverflow**.
-- Implementar essas operações utilizando **SQL**.
+## Elaboração das Consultas SQL
 
----
+Para cada consulta, traduzi-la para SQL e adcionar que operações ela abrange.
 
-## 2. Tipos de Operações a Avaliar
+*Nota: o postgree trata tabelas e colunas como case-sensitive, então vamos padronizar usar eles entre aspas duplas (O MySql entende)*
 
-As operações obrigatórias incluem:
+**Experimento I.** Criação de novo registro de teste na tabela users.
+```
+codigo_sql
+```
+Operações utilizadas: insersão.
 
-1. **Operações básicas de dados:**
-   - Consultas simples
-      - Trazer o detalhamento de cada base, 50 primeiras linhas
-   - Inserção
-      - Inserir um novo usuário U1 na base Users
-      - Inserir um novo usuário U2 na base Users
-      - Inserir um novo post A do user U1 com tipo 1-Question + Add comments 
-      - Inserir um novo post B do user U1 com tipo 1-Question + Add comments
-      - Inserir um novo post C do user U2 com tipo 2-Answer referenciando uma outra postagem (B) respondendo post A + Add comments
-   - Remoção
-      - Remover referencia do post B para se referir a nenhum post
-   - Alteração  
-      - Alterar tipo do posto B
-   *(em diferentes tabelas)*
+**Experimento II.** Remoção do último registro de teste na tabela users.
+```
+codigo_sql
+```
+Operações utilizadas: remoção, busca por atributo não-chave primária, condição de seleção composta.
 
-2. **Buscas por chave primária:**
-   - Busca por **uma única chave**
-      - Buscar title_post quando id = A
-   - Busca por **faixa de valores**
-      - buscar todos os posts de uma respectiva data do usuário id=U1
+**Experimento III.**  Alteração de recompensa em +10 para um usuário e post específico que possue voto do tipo BountyStart
+```
+codigo_sql
+```
+Operações utilizadas: alteração, busca por faixa de chaves, condição de seleção.
 
-3. **Buscas por atributos não-chave:**
-   - Consultas em atributos não-chave
-      - buscar todos os usuários com idade 65 
-   - Uso de **condições compostas**
-      - Buscar todos os usuários com idade 65 que tenha feito alguma postagem no último mês
+**Experimento IV.** Listar todas as postagens que contenham a palavra SQL no título ou nas tags. Ordenar por pontuação.
+```
+codigo_sql
+```
+Operações utilizadas: busca com sql, ordenação.
 
-4. **Buscas por padrões de string:**
-   - Utilização do operador **`LIKE`**
-      - Buscar posts que possuam tags especificas para linguagens de programação
-      - Filtragem de usuários na Location X 
-5. **Consultas com relacionamentos:**
-   - Junções (**JOIN**)
-   - Múltiplas junções
-      - Buscar usuários que possuam distintivos
-      - Buscar usuários que possuam mais distintivos
-      - Buscar posts do tipo "Perguntas" feitos pelo usuário A em certo intervalo de tempo além de todos e todos os comentários com score positivo
-      - Listar usuários que fizeram posts que foram votados como 12-spam, trazer o indentificador de perfil
-      - Listar usuários que fizeram posts votados como 12-spam, trazer o indentificador de perfil e seus respectivos posts (Title, Body, CreationDate, ClosedDate)
+**Experimento V.** Listar a postagem, a tag da postagem e o seu número de comentários que contenham a palavra SQL no texto. Ordenado pelo score.
+```
+codigo_sql
+```
+Operações utilizadas: busca com sql, ordenação, junção.
 
-6. **Consultas com subconsultas**
-   - Listar todos os usuários que não possuam publicação de posts
-   - Listar todos os usuários que possuam Badges e posts do tipo Question 
-   - Listar todos os usuários que possuam Badges ou posts do tipo Question 
+**Experimento VI.** Calcular pontuação média dos posts por usuário.
+```
+código_sql
+```
+Operações utilizadas: agrupamento, agregação.
 
-7. **Operações com agrupamento e agregação:**
-   - **Soma (SUM)**
-   - **Média (AVG)**: users.Age, users.Reputation (age), 
-   - **Mínimo (MIN)**: user.Age, user.Reputation, post.score (tags)
-   - **Máximo (MAX)**: posts.FavoriteCount
-   - **Contagem (COUNT)**
+**Experimento VII.** Listar usuários que fizeram posts votados como 12-spam, trazer o indentificador de perfil e seus respectivos posts (Title, Body, CreationDate, ClosedDate)
+```
+código_sql
+```
+Operações utilizadas:
 
----
+**Experimento VIII.** Buscar todos os usuários com idade 65 que tenha feito alguma postagem no último mês
+```
+código_sql
+```
+Operações utilizadas:
 
-## 3. Planejamento dos Experimentos
+**Experimento IX.** Buscar usuários que possuam mais distintivos(badges)
+```
+código_sql
+```
+Operações utilizadas: 
 
-O grupo deverá:
 
-- Projetar experimentos considerando **diferentes cenários de execução**.
+**Experimento X.** Trazer titulo, nome do tipo, número de comentários, número de vezes que foi referenciado, soma dos votos postivos e soma dos votos negativos do post do tipo resposta que possue maior número de vizualiações.
+```
+código_sql
+```
+Operações utilizadas: 
 
-### Cenários obrigatórios:
+
+
+## Criação de Índices e Definição de Cenários
+
+Cenário I. Cenário Base sem índices utilizando o MySQL
+
+Cenário II. Cenário Base sem índices utilizando o PostgreSQL
+
 
 1. **Banco de dados sem índices**
+- Cenário I. Cenário Base sem índices utilizando o MySQL
+- Cenário II. Cenário Base sem índices utilizando o PostgreSQL
 2. Cenários com índices:
    - Criados sobre diferentes atributos
    - Utilizando diferentes estruturas:
@@ -86,7 +91,7 @@ O grupo deverá:
 
 ---
 
-## 4. Execução dos Experimentos
+## Execução dos Experimentos
 
 - Cada consulta deve ser executada **múltiplas vezes em cada cenário**.
 - O tempo de execução pode variar devido a fatores como:
@@ -98,8 +103,7 @@ O grupo deverá:
 - **Minimizar interferências externas**, como outros programas em execução.
 
 ---
-
-## 5. Coleta de Dados
+## Coleta de Dados
 
 - Desenvolver **programas ou scripts** para:
   - Executar as operações nos SGBDs
@@ -110,20 +114,3 @@ O grupo deverá:
   - **Cenário**
   
   Executar cada operação **pelo menos 20 vezes**.
-
----
-
-## 6. Padronização dos Experimentos
-
-- Todos os experimentos devem ser realizados:
-  - **Na mesma máquina**
-
-⚠️ Caso contrário, os resultados **não serão comparáveis**.
-
----
-
-## 7. Análise dos Resultados
-
-- Comparar os tempos obtidos em cada cenário
-- Avaliar o impacto dos índices no desempenho
-- Identificar **melhores estratégias de otimização**

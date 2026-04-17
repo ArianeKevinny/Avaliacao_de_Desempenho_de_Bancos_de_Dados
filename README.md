@@ -11,14 +11,15 @@ Nesse projeto realizamos a medição e comparação do desempenho dos SGBD's Pos
 
 ## Guia: Arquivos
 - *Relatório.pdf*:  Relatório descrevendo o estudo realizado e os resultados obtidos.
-- *experimentos.md*: Lista das consultas realizadas
+- *relatorio.tex*:  Arquivo latex conténdo o relatório.
+- *experimentos.md*: Planejamento das consultas realizadas
 
 
 ## Etapas do projeto:
 - [x] Definição de equipe
 - [ ] Descrição em *alto nível* do bancos de dados -> Principal informação de cada entidade, principais atributos e relacionamentos -> Não sei se é realmente necessário
 - [ ] Planejar as informações que desejamos extrair do banco
-- [ ] Para cada informação, gerar uma consulta -> [Sugestão: mín: 20 consultas
+- [ ] Para cada informação, gerar uma consulta -> (Sugestão: mín: 20 consultas)
      - [ ] Verificar se as consultas abrangem tudo o que foi solicitado no projeto
      - [ ] Caso sim, transformalas em linguagem SQL
 - [ ] Planejar os cenários
