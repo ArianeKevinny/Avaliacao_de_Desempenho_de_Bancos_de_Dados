@@ -1,0 +1,160 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazilian]{babel}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{float}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+}
+
+\title{MAC5760 - Sistemas de Bancos de Dados \\ \large Avaliação de Desempenho de Bancos de Dados}
+\author{Ariane Kevinny Muniz Ribeiro (17040751) \and Augusto Mariano Bernardi (12554007) \and Cristian Gadelha da Conceição (18075797) \and Nicolas Mello (17040747)}
+\date{Instituto de Matemática e Estatística \\ Universidade de São Paulo \\ São Paulo, 2026}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Introdução}
+Este trabalho consiste em um estudo de ... Foram realizados experimentos para avaliar ... , envolvendo a execução de ...
+
+Nulla eget bibendum lectus. Donec in nisi magna. Suspendisse ligula justo, laoreet eu sollicitudin vel, placerat ac sapien. Fusce tempus blandit elit, at tincidunt sapien efficitur at. Maecenas auctor, diam ut tincidunt semper, felis risus semper libero, sit amet sodales urna massa quis dui. Vivamus posuere odio at neque auctor auctor. Morbi id urna risus. Vestibulum turpis eros, tempus non elementum eu, sollicitudin ut neque. Etiam vel risus ullamcorper, consectetur nisi aliquam, aliquet justo. Donec consequat sodales pharetra. Fusce eu lectus libero. Nulla eleifend nunc vel lacus porttitor, nec bibendum magna dapibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent dictum fringilla dictum. Maecenas consectetur venenatis auctor. Fusce tempus neque ut nisi pretium dapibus.
+
+\section{Descrição dos Experimentos Realizados}
+Esta seção apresenta detalhes dos experimentos realizados no estudo ...
+
+\subsection{Operações Avaliadas sobre o BD}
+Definiu-se para o experimento um conjunto de operações sobre o BD que abrange uma grande variedade de modificação e consulta de dados...
+
+As operações são:
+\begin{itemize}
+    A. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    B. Etiam ac ullamcorper mi. Vestibulum vitae hendrerit magna.
+    C. Vivamus tincidunt est justo.
+    D. Curabitur consectetur lacus erat, at efficitur sapien accumsan non.
+    E. ...
+\end{itemize}
+
+\subsection{Cenários Experimentais}
+\begin{itemize}
+    \item Cenário P1 - PostgreSQL sem índices
+    \item Cenário P2 - PostgreSQL com índice Hash no atributo A1 da tabela T1
+    \item ...
+    \item Cenário M1 - MySQL sem índices
+    \item Cenário M2 - MySQL com índice Hash no atributo A1 da tabela T1
+    \item ...
+\end{itemize}
+
+\subsection{Ambiente Computacional Usado}
+Os experimentos foram realizados em uma máquina com processador XYZ de XX GHz e YY de RAM, ... .
+
+Utilizou-se o PostgreSQL versão X e o MySQL versão. Para a conexão com esses SGBDs e submissão das operações aos BDs, foram usados os softwares clientes de conexão A, B e C, respectivamente / foram usadas as APIs de Python \texttt{psycopg2} e \texttt{mysql.connector}. ...
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac ullamcorper mi. Vestibulum vitae hendrerit magna. Vivamus tincidunt est justo. Curabitur consectetur lacus erat, at efficitur sapien accumsan non. Vestibulum tincidunt nulla diam, non facilisis orci placerat quis. Nam id ligula a urna accumsan pretium id congue ipsum. Donec pellentesque fermentum nunc ut laoreet.
+
+\section{Resultados dos Experimentos}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac ullamcorper mi. Vestibulum vitae hendrerit magna. Vivamus tincidunt est justo. Curabitur consectetur lacus erat, at efficitur sapien accumsan non. Vestibulum tincidunt nulla diam, non facilisis orci placerat quis. Nam id ligula a urna accumsan pretium id congue ipsum. Donec pellentesque fermentum nunc ut laoreet.
+
+\begin{table}[H]
+\centering
+\caption{Tempo médio (em ms) de execução das operações de modificação do BD no cenário 1 - sem índices}
+\begin{tabular}{lcccc}
+\toprule
+& \multicolumn{2}{c}{PostgreSQL} & \multicolumn{2}{c}{MySQL} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+& Tempo médio (ms) & Desvio Padrão & Tempo médio (ms) & Desvio Padrão \\
+\midrule
+Operação A & & & & \\
+Operação B & & & & \\
+Operação C & & & & \\
+Operação D & & & & \\
+Operação E & & & & \\
+\bottomrule
+\end{tabular}
+\label{tab:modificacao}
+\end{table}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac ullamcorper mi. Vestibulum vitae hendrerit magna. Vivamus tincidunt est justo. Curabitur consectetur lacus erat, at efficitur sapien accumsan non. Vestibulum tincidunt nulla diam, non facilisis orci placerat quis. Nam id ligula a urna accumsan pretium id congue ipsum. Donec pellentesque fermentum nunc ut laoreet.
+
+\begin{table}[H]
+\centering
+\caption{Tempo médio (em ms) de execução das operações de consulta simples no BD no cenário 1 - sem índices}
+\begin{tabular}{lcccc}
+\toprule
+& \multicolumn{2}{c}{PostgreSQL} & \multicolumn{2}{c}{MySQL} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+& Tempo médio (ms) & Desvio Padrão & Tempo médio (ms) & Desvio Padrão \\
+\midrule
+Operação H & & & & \\
+Operação I & & & & \\
+\bottomrule
+\end{tabular}
+\label{tab:consulta_simples}
+\end{table}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac ullamcorper mi. Vestibulum vitae hendrerit magna. Vivamus tincidunt est justo. Curabitur consectetur lacus erat, at efficitur sapien accumsan non. Vestibulum tincidunt nulla diam, non facilisis orci placerat quis. Nam id ligula a urna accumsan pretium id congue ipsum. Donec pellentesque fermentum nunc ut laoreet.
+
+\begin{table}[H]
+\centering
+\caption{Tempo médio (em ms) de execução das operações de agrupamento e agregação no BD no cenário 1 - sem índices}
+\begin{tabular}{lcccc}
+\toprule
+& \multicolumn{2}{c}{PostgreSQL} & \multicolumn{2}{c}{MySQL} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+& Tempo médio (ms) & Desvio Padrão & Tempo médio (ms) & Desvio Padrão \\
+\midrule
+Operação S & & & & \\
+Operação T & & & & \\
+\bottomrule
+\end{tabular}
+\label{tab:agregacao}
+\end{table}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac ullamcorper mi. Vestibulum vitae hendrerit magna. Vivamus tincidunt est justo. Curabitur consectetur lacus erat, at efficitur sapien accumsan non. Vestibulum tincidunt nulla diam, non facilisis orci placerat quis. Nam id ligula a urna accumsan pretium id congue ipsum. Donec pellentesque fermentum nunc ut laoreet.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\linewidth]{example-image}
+\caption{Variação dos tempos de execução das operações/consultas no cenário 1 - sem índices no PostgreSQL. Cada diagrama de caixa mostra os tempos de execução de uma única operação/consulta.}
+\label{fig:boxplot}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\linewidth]{example-image}
+caption{Comparação dos tempos médios de execução das operações nos diferentes SGBDs. (exemplo de figura)}
+\label{fig:comparacao}
+\end{figure}
+
+Nulla eget bibendum lectus. Donec in nisi magna. Suspendisse ligula justo, laoreet eu sollicitudin vel, placerat ac sapien. Fusce tempus blandit elit, at tincidunt sapien efficitur at. Maecenas auctor, diam ut tincidunt semper, felis risus semper libero, sit amet sodales urna massa quis dui. Vivamus posuere odio at neque auctor auctor. Morbi id urna risus. Vestibulum turpis eros, tempus non elementum eu, sollicitudin ut neque. Etiam vel risus ullamcorper, consectetur nisi aliquam, aliquet justo. Donec consequat sodales pharetra. Fusce eu lectus libero. Nulla eleifend nunc vel lacus porttitor, nec bibendum magna dapibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent dictum fringilla dictum. Maecenas consectetur venenatis auctor. Fusce tempus neque ut nisi pretium dapibus.
+
+\section{Conclusões}
+Nulla eget bibendum lectus. Donec in nisi magna. Suspendisse ligula justo, laoreet eu sollicitudin vel, placerat ac sapien. Fusce tempus blandit elit, at tincidunt sapien efficitur at. Maecenas auctor, diam ut tincidunt semper, felis risus semper libero, sit amet sodales urna massa quis dui. Vivamus posuere odio at neque auctor auctor. Morbi id urna risus. Vestibulum turpis eros, tempus non elementum eu, sollicitudin ut neque. Etiam vel risus ullamcorper, consectetur nisi aliquam, aliquet justo. Donec consequat sodales pharetra. Fusce eu lectus libero. Nulla eleifend nunc vel lacus porttitor, nec bibendum magna dapibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent dictum fringilla dictum. Maecenas consectetur venenatis auctor. Fusce tempus neque ut nisi pretium dapibus.
+
+\section{Link para o Repositório com o Código dos Experimentos}
+\url{https://github.com/exemplo/repositorio-experimentos}
+
+\section{Link para o Vídeo de Apresentação do Trabalho}
+\url{https://youtu.be/exemplo}
+
+\section*{Referências}
+\begin{enumerate}
+    \item Autor, título, local de publicação (link, evento, revista, etc...)
+    \item Autor, título, local de publicação (link, evento, revista, etc...)
+    \item ...
+    \item Autor, título, local de publicação (link, evento, revista, etc...)
+\end{enumerate}
+
+\end{document}
