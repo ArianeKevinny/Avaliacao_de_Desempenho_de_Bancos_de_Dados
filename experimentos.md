@@ -39,15 +39,15 @@ Para cada consulta, traduzi-la para SQL e adcionar que operações ela abrange.
 - [x] Operações de alteração (update) de registros em diferentes tabelas
 - [x] Busca de registros por chave primária (um único valor)
 - [x] Busca de registros por faixa de chaves primárias (range)
-- [ ] Buscas por atributos não-chave (simples)
-- [ ] Buscas com condições de seleção compostas (vários atributos não-chave)
-- [ ] Buscas com padrão de string usando operador LIKE
-- [ ] Buscas envolvendo relacionamentos (junções entre duas tabelas)
-- [ ] Buscas envolvendo junções de junções (múltiplas junções)
-- [ ] Buscas envolvendo subconsultas (simples ou correlacionadas)
-- [ ] Buscas envolvendo operações de agrupamento (GROUP BY)
-- [ ] Buscas envolvendo funções de agregação (soma, média, mínimo, máximo, contagem)
-- [ ] Consultas que se beneficiem de índices full-text (busca por palavras em textos longos, como Posts.Body ou Users.AboutMe)
+- [x] Buscas por atributos não-chave (simples)
+- [x] Buscas com condições de seleção compostas (vários atributos não-chave)
+- [x] Buscas com padrão de string usando operador LIKE
+- [x] Buscas envolvendo relacionamentos (junções entre duas tabelas)
+- [x] Buscas envolvendo junções de junções (múltiplas junções)
+- [x] Buscas envolvendo subconsultas (simples ou correlacionadas)
+- [x] Buscas envolvendo operações de agrupamento (GROUP BY)
+- [x] Buscas envolvendo funções de agregação (soma, média, ~~mínimo~~, ~~máximo~~, contagem)
+- [x] Consultas que se beneficiem de índices full-text (busca por palavras em textos longos, como Posts.Body ou Users.AboutMe)
 
 ## Criação de Índices e Definição de Cenários
 
