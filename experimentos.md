@@ -2,12 +2,10 @@
 
 ![alt text](image.png)
 
-## Elaboração das Consultas SQL
-
 Para cada consulta, traduzi-la para SQL e adcionar que operações ela abrange.
 *Nota: o postgree trata tabelas e colunas como case-sensitive, então vamos padronizar usar eles entre aspas duplas (O MySql entende)*
 
-# Consultas Planejadas
+## Consultas Planejadas
 
 | **ID** | **Nome da ação** | **Consulta SQL Relacionada** | **Consulta Otimizada** | **Justificativa da Consulta** | **O que essa consulta abrange** |
 |-----|--------------|--------------------------|--------------------------|-----------------------------|------------------------------|
