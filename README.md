@@ -17,7 +17,7 @@ Nesse projeto realizamos a medição e comparação do desempenho dos SGBD's Pos
 
 ## Etapas do projeto:
 - [x] Definição de equipe
-- [ ] Descrição em *alto nível* do bancos de dados -> Principal informação de cada entidade, principais atributos e relacionamentos -> Não sei se é realmente necessário
+- [ ] Descrição em *alto nível* do bancos de dados -> Principal informação de cada entidade, principais atributos e relacionamentos -> ***Não sei se é realmente necessário***
 - [ ] Planejar as informações que desejamos extrair do banco
 - [ ] Para cada informação, gerar uma consulta -> (Sugestão: mín: 20 consultas)
      - [ ] Verificar se as consultas abrangem tudo o que foi solicitado no projeto
