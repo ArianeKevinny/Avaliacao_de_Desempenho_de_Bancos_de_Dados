@@ -1,7 +1,4 @@
 # Experimentos de Avaliação de Desempenho
-
-![alt text](image.png)
-
 Para cada consulta, traduzi-la para SQL e adcionar que operações ela abrange.
 *Nota: o postgree trata tabelas e colunas como case-sensitive, então vamos padronizar usar eles entre aspas duplas (O MySql entende)*
 
